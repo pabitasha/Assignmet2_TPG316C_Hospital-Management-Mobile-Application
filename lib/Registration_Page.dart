@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/routes/routes.dart';
 
 void main() => runApp(const MyApp());
 
@@ -38,7 +39,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
       return;
     }
     _formKey.currentState!.save();
-    //Navigator.of(context).pushNamed();
   }
 
   // Build the UI for the login screen
@@ -176,6 +176,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
                   // context.read<User>().email = emailCotroller.text;
 
                   const Text('Already have account? Login');
+                  Navigator.of(context).pushNamed(RouteManager.loginPage);
                 },
               ),
             ],

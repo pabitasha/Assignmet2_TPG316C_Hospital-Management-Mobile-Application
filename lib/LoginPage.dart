@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/routes/routes.dart';
 
 void main() => runApp(const MyApp());
 
@@ -131,9 +132,7 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 onPressed: () {
                   _login();
-                  // context.read<User>().email = emailCotroller.text;
-
-                  // Navigator.of(context).pushNamed(RouteManager.mainpage);
+                  Navigator.of(context).pushNamed(RouteManager.mainPage);
                 },
               ),
             ],

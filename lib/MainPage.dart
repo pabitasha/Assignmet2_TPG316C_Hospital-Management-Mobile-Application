@@ -1,5 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/routes/routes.dart';
 
 // ignore: camel_case_types
 class MainPage extends StatefulWidget {
@@ -39,9 +40,8 @@ class _MainPageState extends State<MainPage> {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      // Navigator.of(context).pushNamed(RouteManager.USPage);
-                      // context.read<User>().understood =
-                      //understoodCotroller.text;
+                      Navigator.of(context)
+                          .pushNamed(RouteManager.appoinmentPage);
                     },
                     child: const Text("Appoinment Pages"),
                   ),
@@ -50,9 +50,8 @@ class _MainPageState extends State<MainPage> {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      // Navigator.of(context).pushNamed(RouteManager.USPage);
-                      // context.read<User>().understood =
-                      //understoodCotroller.text;
+                      Navigator.of(context)
+                          .pushNamed(RouteManager.myProfilePage);
                     },
                     child: const Text("My-Profile Page"),
                   ),
@@ -61,9 +60,7 @@ class _MainPageState extends State<MainPage> {
                   ),
                   ElevatedButton(
                     onPressed: () {
-                      // Navigator.of(context).pushNamed(RouteManager.NotUSPage);
-                      // context.read<User>().notUnderstood =
-                      // notUnderstoodCotroller.text;
+                      Navigator.of(context).pushNamed(RouteManager.reviewPage);
                     },
                     child: const Text("Review Page"),
                   ),
