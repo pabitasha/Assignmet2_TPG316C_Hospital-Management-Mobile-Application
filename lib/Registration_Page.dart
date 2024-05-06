@@ -173,12 +173,10 @@ class _RegistrationPageState extends State<RegistrationPage> {
                 ),
                 onPressed: () {
                   _login();
-                  // context.read<User>().email = emailCotroller.text;
-
-                  const Text('Already have account? Login');
                   Navigator.of(context).pushNamed(RouteManager.loginPage);
                 },
               ),
+              const Text('Already have account? Login'),
             ],
           ),
         ),
